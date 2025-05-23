@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Hello Worldv3</h1>
+        <h1>Hello World v1</h1>
         <button @click="generate">Generate Number</button>
         <p>Random: {{ number }}</p>
         <!-- <p v-if="number !== null">Random: {{ number }}</p> -->
