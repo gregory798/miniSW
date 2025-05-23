@@ -1,0 +1,12 @@
+# gros dossiers inutiles
+node_modules
+.nuxt
+.output
+build
+dist
+venv*
+.git
+
+# caches divers
+__pycache__
+.DS_Store
