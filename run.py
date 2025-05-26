@@ -12,5 +12,5 @@ def run():
 if __name__ == "__main__":
     thread = threading.Thread(target=run, daemon=True)
     thread.start()
-    webview.create_window("Application", "http://127.0.0.1:8000")
+    webview.create_window("miniSW", "http://127.0.0.1:8000")
     webview.start()

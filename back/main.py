@@ -20,5 +20,5 @@ def getNumber():
     return {"number": random.randint(0, 100)}
 
 
-dossier_static = Path(__file__).parent / "static"
-app.mount("/", StaticFiles(directory=dossier_static, html=True), name="static")
+static_folder = Path(__file__).parent / "static"
+app.mount("/", StaticFiles(directory=static_folder, html=True), name="static")

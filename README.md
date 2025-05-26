@@ -34,8 +34,10 @@ then run the app :
 python3.10 run.py
 ```
 
-Once you're OK with the app, launch :
+Once you're OK with the app, run pyinstaller :
 
 ```
 pyinstaller build.spec
 ```
+
+You will find the app in the /dist folder
