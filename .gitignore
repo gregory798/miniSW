@@ -1,24 +1,36 @@
-# Nuxt dev/build outputs
-.output
-.data
-.nuxt
-.nitro
-.cache
-dist
+venv/
+venv-*/
+.venv/
 
-# Node dependencies
-node_modules
+__pycache__/
+*.py[cod]
+*.pyd
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+*.sqlite3
 
-# Logs
-logs
-*.log
+build/
+dist/
+*.spec
+*.exe
+*.dll
+*.so
 
-# Misc
+back/static/
+
+front/dist/
+
+yarn.lock
+pnpm-lock.yaml
+
+.vscode/
+.idea/
+*.iml
+*.sublime-*
+*.swp
+*~
+Thumbs.db
 .DS_Store
-.fleet
-.idea
-
-# Local env files
-.env
-.env.*
-!.env.example
+.directory
