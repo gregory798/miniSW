@@ -1,8 +1,8 @@
 steps for modification + verifications :
 
 ```
--<h1>Hello World v1</h1>
-+<h1>Hello World v2</h1>
+-<h1>Hello world !</h1>
++<h1>Hello world 2 !</h1>
 ```
 
 ```
