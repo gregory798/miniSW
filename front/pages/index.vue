@@ -2,7 +2,7 @@
     <div>
         <h1>Hello world !</h1>
         <button @click="generate">Generate Number</button>
-        <p>Number is: {{ number }}</p>
+        <p>Number is : {{ number }}</p>
     </div>
 </template>
 
