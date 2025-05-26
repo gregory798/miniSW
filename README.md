@@ -1,4 +1,4 @@
-steps for modification + verifications :
+This is miniSW
 
 ```
 -<h1>Hello world !</h1>

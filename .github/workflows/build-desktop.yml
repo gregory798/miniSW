@@ -39,6 +39,7 @@ jobs:
           npm run build      # génère .output/public
 
       - name: Copy static bundle
+        shell: bash
         run: |
           rm -rf back/static
           mkdir -p back/static
