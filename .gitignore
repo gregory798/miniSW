@@ -14,7 +14,7 @@ htmlcov/
 
 build/
 dist/
-*.spec
+# *.spec
 *.exe
 *.dll
 *.so
