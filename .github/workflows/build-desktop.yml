@@ -19,29 +19,36 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Install build deps
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
           pip install fastapi uvicorn pywebview pyinstaller
+
+      - name: Install Node deps & build Nuxt
+        working-directory: front
+        run: |
+          npm ci             # ou pnpm i / yarn install
+          npm run build      # génère .output/public
+
+      - name: Copy static bundle
+        run: |
+          rm -rf back/static
+          mkdir -p back/static
+          rsync -a front/.output/public/ back/static/
 
       - name: PyInstaller
         run: |
           pyinstaller --clean --noconfirm build.spec
 
-      - name: Show dist contents
-        if: runner.os == 'Windows'
-        run: dir dist\miniSW
-      - name: Show dist contents
-        if: runner.os != 'Windows'
-        run: ls -R dist/miniSW
-
       - uses: actions/upload-artifact@v4
         with:
           name: miniSW-${{ runner.os }}
-          path: |
-            dist/miniSW/**
+          path: dist/miniSW/**
