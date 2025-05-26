@@ -1,9 +1,8 @@
 <template>
     <div>
-        <h1>Hello World v1</h1>
+        <h1>Hello world !</h1>
         <button @click="generate">Generate Number</button>
-        <p>Random: {{ number }}</p>
-        <!-- <p v-if="number !== null">Random: {{ number }}</p> -->
+        <p>Number is: {{ number }}</p>
     </div>
 </template>
 
@@ -19,7 +18,7 @@ async function generate() {
         const json = JSON.parse(text)
         number.value = json.number
     } catch (e) {
-        console.error("Erreur dans generate()", e)
+        console.error("Error in generate()", e)
     }
 }
 </script>

@@ -2,7 +2,7 @@ name: build-windows
 
 on:
   push:
-    paths:               # facultatif : ne déclenche que si le code change
+    paths:              
       - "**/*.py"
       - "**/*.spec"
       - "back/**"
@@ -28,9 +28,9 @@ jobs:
       - name: Build exe
         run: |
           pyinstaller build.spec
-          dir dist\ActimusMinimal   # simple listing pour vérifier
+          dir dist\miniSW   # simple listing pour vérifier
 
       - uses: actions/upload-artifact@v4
         with:
-          name: ActimusMinimal-win
-          path: dist/ActimusMinimal/**
+          name: miniSW-win
+          path: dist/miniSW/**

@@ -19,8 +19,8 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='ActimusMinimal',
-    console=False,      # fenêtre terminal masquée
+    name='miniSW',
+    console=False,
 )
 coll = COLLECT(
     exe,
@@ -28,6 +28,6 @@ coll = COLLECT(
     a.zipfiles,
     a.datas,
     strip=False,
-    upx=True,           # compresse (optionnel)
-    name='ActimusMinimal'
+    upx=True,
+    name='miniSW'
 )
