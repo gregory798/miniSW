@@ -43,7 +43,7 @@ jobs:
         run: |
           rm -rf back/static
           mkdir -p back/static
-          rsync -a front/.output/public/ back/static/
+          cp -r front/.output/public/. back/static/
 
       - name: PyInstaller
         run: |

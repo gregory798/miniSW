@@ -12,6 +12,5 @@ def run():
 if __name__ == "__main__":
     thread = threading.Thread(target=run, daemon=True)
     thread.start()
-    time.sleep(1)
     webview.create_window("Application", "http://127.0.0.1:8000")
     webview.start()
