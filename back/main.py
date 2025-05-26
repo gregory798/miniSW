@@ -2,6 +2,7 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
+import random
 
 app = FastAPI()
 
@@ -15,8 +16,7 @@ app.add_middleware(
 
 
 @app.get("/random")
-def obtenir_nombre():
-    import random
+def getNumber():
     return {"number": random.randint(0, 100)}
 
 
