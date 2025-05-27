@@ -39,7 +39,7 @@ then go to root
 ```
 cd ..
 ```
-then remove teh static folder
+then remove the static folder
 ```
 rm -rf back/static
 ```
