@@ -1,6 +1,9 @@
-This is miniSW
+# miniSW : Starter template for desktop apps (MacOS, Linux, Windows) using Nuxt 3 & FastAPI
+
+![miniSW GIF](https://s14.gifyu.com/images/bxMCL.gif)
 
 
+# Development
 
 If you want to make modifications in the front-end :
 
