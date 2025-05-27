@@ -24,9 +24,9 @@ If you want to make modifications in the front-end :
 
 go to /front and make your changes:
 
-```
--<h1>Hello world !</h1>
-+<h1>Hello world 2 !</h1>
+```diff
+- <h1>Hello world !</h1>
++ <h1>Hello world 2 !</h1>
 ```
 
 then build the app :
