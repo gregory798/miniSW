@@ -1,4 +1,4 @@
-# miniSW : Starter template for desktop apps (MacOS, Linux, Windows) using Nuxt 3 & FastAPI
+# miniSW : Starter Template for Full-Stack esktop Apps (MacOS, Linux, Windows) using Nuxt 3 & FastAPI
 
 ![miniSW GIF](https://s14.gifyu.com/images/bxMCL.gif)
 
